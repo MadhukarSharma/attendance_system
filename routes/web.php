@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('hello_world', function(){
+	return "route is working";
 });
+
+Route::get('/','PagesController@index')->name('dashboard');
+
+Route::resource('/banner', 'BannerController');
+Route::resource('/feature', 'FeaturesController');
+Route::resource('/workshop', 'Upcoming_WorkshopController');
+Route::resource('/faculty','Faculty_MemberController');

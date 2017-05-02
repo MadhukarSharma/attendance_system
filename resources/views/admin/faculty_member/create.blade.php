@@ -59,7 +59,17 @@
                     <input type="text" class="form-control" name="job_post" placeholder="Enter position of Faculty Member">
                   </div>
                  </div>
-                 
+                 <div class="form-group">
+                   <label for="status" class="col-sm-2 control-label">Status</label>
+                      <div class="col-sm-10">
+                      <select name="status">
+
+                        <option value="1">Enable</option>
+                        <option value="0">Disable</option>
+                      </select>
+                       </div>
+                    </div>
+                  </div>
                  <div class="form-group">
                   <label for="member_image" class="col-sm-2 control-label">Member_Image</label>
 

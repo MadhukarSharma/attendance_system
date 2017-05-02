@@ -64,6 +64,7 @@ class Upcoming_WorkshopController extends Controller
 
             'title'                 => $request->title,
             'description'           => $request->description,
+            'status'                => $request->status,
             'image'                 => $imagepath . $image,
 
             );

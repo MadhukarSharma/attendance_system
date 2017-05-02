@@ -39,6 +39,7 @@
                   <th>Name Of Members</th>
                   <th>Job Post</th>
                   <th width="200px">Description</th>
+                  <th>status</th>   
                   <th width="200px">Action</th>
                 </tr>
                 </thead>
@@ -52,6 +53,7 @@
                   <td>{{$member->name_of_member}}</td>
                   <td>{{$member->job_post}}</td>
                   <td>{{$member->description}}</td>
+                  <td>{{$member->status}}</td>
                   <td>
                   <a href="{{route('faculty.edit', $member->member_id)}}"><button type="submit" class="btn btn-primary btn-sm">Edit</button>
                   </a>

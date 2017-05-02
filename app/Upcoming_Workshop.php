@@ -12,7 +12,7 @@ class Upcoming_Workshop extends Model
 
 	  protected $fillable = [
         
-        'image', 'title', 'description',
+        'image', 'title', 'description', 'status'
     ];
 
 

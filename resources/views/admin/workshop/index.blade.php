@@ -37,6 +37,7 @@
                   <th>S.N</th>
                   <th>workshop_logo</th>
                   <th>Title</th>
+                  <th>Status</th>
                   <th width="200px">Description</th>
                   <th width="200px">Action</th>
                 </tr>
@@ -50,6 +51,7 @@
                   <td>{{$id++}}</td>
                   <td><img src ="{{asset($workshop->image)}}" style="height: 60px;"</td>
                   <td>{{$workshop->title}}</td>
+                  <td>{{$workshop->status}}</td>
                   <td>{{$workshop->description}}</td>
                   <td>
                   <a href="{{route('workshop.edit', $workshop->workshop_id)}}"><button type="submit" class="btn btn-primary btn-sm">Edit</button>

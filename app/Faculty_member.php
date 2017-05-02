@@ -10,7 +10,7 @@ class Faculty_member extends Model
 
 	  protected $fillable = [
         
-        'name_of_member', 'member_image', 'job_post', 'description',
+        'name_of_member', 'member_image', 'job_post', 'description','status'
     ];
 
 
@@ -18,3 +18,18 @@ class Faculty_member extends Model
         'password', 'remember_token',
     ];
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

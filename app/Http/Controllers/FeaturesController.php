@@ -58,7 +58,8 @@ class FeaturesController extends Controller
 
             'title'                 => $request->title,
             'description'           => $request->description,
-            'logo'          => $imagepath . $image,
+            'status'                => $request->status,
+            'logo'                  => $imagepath . $image,
 
             );
 
@@ -101,7 +102,7 @@ class FeaturesController extends Controller
      */
     public function update(FeatureRequest $request, $id)
     {
-         $data = $request->only('title','description');
+         $data = $request->only('title','description','status');
         // dd($data);
         Feature::where('feature_id', $id)->update($data);
         return redirect()->route('feature.index');

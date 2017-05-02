@@ -55,12 +55,12 @@
           </a>
         </li>
         <li class="treeview">
-          <a href="#">
+          <a href="{{route('feedback.index')}}">
             <i class="fa fa-edit"></i> <span>Feedback</span>
           </a>
         </li>
         <li class="treeview">
-          <a href="#">
+          <a href="{{route('course.index')}}">
             <i class="fa fa-table"></i> <span>Courses</span>
           </a>
         </li>
@@ -73,7 +73,7 @@
           </a>
         </li>
         <li class="treeview">
-          <a href="#">
+          <a href="{{route('contact.index')}}">
             <i class="fa fa-share"></i> <span>Contact</span>
           </a>
          </li>

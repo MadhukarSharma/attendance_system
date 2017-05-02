@@ -5,7 +5,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Fill the textfields  
+        Fill the text fields  
       </h1>
       
     </section>
@@ -52,7 +52,17 @@
                 </div>
 
                  </div>
-                
+                    <div class="form-group">
+                   <label for="status" class="col-sm-2 control-label">Status</label>
+                      <div class="col-sm-10">
+                      <select name="status">
+
+                        <option value="1" selected>Enable</option>
+                        <option value="0">Disable</option>
+                      </select>
+                       </div>
+                    </div>
+                  </div>
                  <div class="form-group">
                   <label for="logo" class="col-sm-2 control-label">Feature_Image</label>
 

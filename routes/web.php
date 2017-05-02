@@ -21,3 +21,6 @@ Route::resource('/banner', 'BannerController');
 Route::resource('/feature', 'FeaturesController');
 Route::resource('/workshop', 'Upcoming_WorkshopController');
 Route::resource('/faculty','Faculty_MemberController');
+Route::resource('/feedback','FeedbackController');
+Route::resource('/course','CourseController');
+Route::resource('/contact', 'ContactController');

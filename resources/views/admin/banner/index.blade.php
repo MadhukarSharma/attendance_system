@@ -38,6 +38,7 @@
                   <th>Banner_Image</th>
                   <th>Title</th>
                   <th>Heading</th>
+                  <th>status</th>                
                   <th width="200px">Description</th>
                   <th width="200px">Action</th>
                 </tr>
@@ -51,6 +52,8 @@
                   <td><img src ="{{asset($banner->banner_image)}}" style="height: 60px;"</td>
                   <td>{{$banner->title}}</td>
                   <td>{{$banner->heading}}</td>
+                  <td>{{$banner->status}}</td>                
+
                   <td>{{$banner->description}}</td>
                   <td>
                   <a href="{{route('banner.edit', $banner->banner_id)}}"><button type="submit" class="btn btn-primary btn-sm">Edit</button>

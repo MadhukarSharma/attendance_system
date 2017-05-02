@@ -59,7 +59,9 @@ class Faculty_MemberController extends Controller
             'name_of_member'        => $request->name_of_member,
             'job_post'              => $request->job_post,
             'description'           => $request->description,
+            'status'                => $request->status,
             'member_image'          => $imagepath . $image,
+
 
             );
 

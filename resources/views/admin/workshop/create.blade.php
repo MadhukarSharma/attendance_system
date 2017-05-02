@@ -52,7 +52,18 @@
                 </div>
 
                  </div>
-                                 
+                   <div class="form-group">
+                   <label for="status" class="col-sm-2 control-label">Status</label>
+                      <div class="col-sm-10">
+                      <select name="status">
+
+                        <option value="1" selected>Enable</option>
+                        <option value="0">Disable</option>
+                      </select>
+                       </div>
+                    </div>
+                  </div>
+                    
                  <div class="form-group">
                   <label for="workshop_image" class="col-sm-2 control-label">Workshop_image</label>
 

@@ -58,6 +58,7 @@ class BannerController extends Controller
             'title'                 => $request->title,
             'heading'               => $request->heading,
             'description'           => $request->description,
+            'status'                =>$request->status,
             'banner_image'          => $imagepath . $image,
 
             );

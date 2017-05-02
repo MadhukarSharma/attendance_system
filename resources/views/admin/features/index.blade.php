@@ -37,6 +37,7 @@
                   <th>S.N</th>
                   <th>Feature_logo</th>
                   <th>Title</th>
+                  <th>Status</th>
                   <th width="200px">Description</th>
                   <th width="200px">Action</th>
                 </tr>
@@ -50,6 +51,7 @@
                   <td>{{$id++}}</td>
                   <td><img src ="{{asset($feature->logo)}}" style="height: 60px;"</td>
                   <td>{{$feature->title}}</td>
+                  <td>{{$feature->status}}</td>
                   <td>{{$feature->description}}</td>
                   <td>
                   <a href="{{route('feature.edit', $feature->feature_id)}}"><button type="submit" class="btn btn-primary btn-sm">Edit</button>

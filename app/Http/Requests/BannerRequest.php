@@ -28,7 +28,6 @@ class BannerRequest extends FormRequest
         'title'       =>'required', 
         'heading'     =>'required',
         'description' =>'required',
-            
         ];
     }
 }

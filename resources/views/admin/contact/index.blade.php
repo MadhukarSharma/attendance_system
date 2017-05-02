@@ -60,7 +60,7 @@
                   <button type="submit" class="btn btn-primary btn-sm">View</button>
                   </a>
 
-                   <a href="">
+                   <a href="{{route('contact.mail_reply',$contact->contact_id)}}">
                   <button type="submit" class="btn btn-primary btn-sm">Reply</button>
                   </a>
                   </td>

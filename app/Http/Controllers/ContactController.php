@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Mail;
 use Illuminate\Http\Request;
 use App\Contact;
 use App\Http\Requests\ContactRequest;
@@ -94,4 +94,31 @@ class ContactController extends Controller
     {
         //
     }
+
+    public function mail_reply($id)
+    {
+        $contact = Contact::findorfail($id);
+        // dd($contact);
+
+        return view('admin.contact.mail_reply',compact('contact'));
+    }
+
+    public function send_email(Request $request)
+    {
+        $data = [
+
+            'email_from'        => $request->email_from,
+            'email_to'          => $request->email_to,
+            'subject'           => $request->subject,
+        ];
+
+       Mail::send('admin.contact.mail', $data, function($message) use($data){
+
+        $message->from($data['email_from']);
+        $message->to($data['email_to']);
+        $message->subject($data['subject']);
+
+       });
+    }
+
 }

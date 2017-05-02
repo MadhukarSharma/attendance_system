@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('hello_world', function(){
-	return "route is working";
-});
-
 Route::get('/','PagesController@index')->name('dashboard');
 
 Route::resource('/banner', 'BannerController');
@@ -24,3 +20,8 @@ Route::resource('/faculty','Faculty_MemberController');
 Route::resource('/feedback','FeedbackController');
 Route::resource('/course','CourseController');
 Route::resource('/contact', 'ContactController');
+Route::get('/contact/reply/{id}','ContactController@mail_reply')->name('contact.mail_reply');
+Route::post('/contact/reply','ContactController@send_email')->name('contact.send_mail');
+
+
+// Route::get('/', 'PagesController@index');
